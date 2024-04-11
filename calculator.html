@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style type="text/css" rel="stylesheet">
+
+        *{
+            box-sizing: border-box;
+            box-shadow: rgba(0,0,0,0.3);
+        }
+
+        body{
+            height: 100vh;
+            /* display: flex; */
+            /* justify-content: center; */
+            position: relative;
+            }
+
+        .container{
+            border:1px solid grey;
+            display: flex;
+            
+            align-items: center;
+            padding:10px;
+            margin:10px;
+        }
+
+        .num{
+            padding:10px;
+        }
+
+        .btn{
+            width:100px;
+            height: 100px;
+        }
+
+        .result{
+            display:block;
+            width: 500px;
+            height:500px;
+            border:solid 1px;
+        }
+
+
+
+    </style>
+
+</head>   
+   
+<body>
+  
+    <div class="container">
+
+        <!--  0 | 1 | 2 | = | -->
+
+    <section class="zero">
+
+        <div class="num">
+            <button type="button" id="num0" class="btn" onclick="getData()">0</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num1" class="btn" onclick="getData()">1</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num2" class="btn" onclick="getData()">2</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num=" class="btn" onclick="getData()">=</button>
+        </div>
+
+        
+
+    </section>
+
+
+    <!--  3 | 4 | 5 | / | -->
+
+    <section class="three">
+
+        <div class="num">
+            <button type="button" id="num3" class="btn" onclick="getData()">3</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num4" class="btn" onclick="getData()">4</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num5" class="btn" onclick="getData()">5</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num/" class="btn" onclick="getData()">/</button>
+        </div>
+
+    </section>
+
+
+    <!-- 6 | 7 | 8 | x |-->
+    <section class="six">
+
+        <div class="num">
+            <button type="button" id="num6" class="btn" onclick="getData()">6</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num7" class="btn" onclick="getData()">7</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num8" class="btn" onclick="getData()">8</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="numx" class="btn" onclick="getData()">x</button>
+        </div>
+
+        
+
+    </section>
+
+
+    <!-- 9 | + | - |  -->
+    <section class="nine">
+
+        <div class="num">
+            <button type="button" id="num9" class="btn" onclick="getData()">9</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num+" class="btn" onclick="getData()">+</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num-" class="btn" onclick="getData()">-</button>
+        </div>
+
+        <div class="num">
+            <button type="button" id="num.del" class="btn" onclick="getData()">del.</button>
+        </div>
+
+        
+
+    </section>
+
+    <section class="result">
+        <h3><span id="replacenum">Result</span></h3>
+     </section>
+
+
+ </div>
+
+
+
+
+
+
+</body>
+</html>

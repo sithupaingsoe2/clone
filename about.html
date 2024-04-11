@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="uni.css" rel="stylesheet" type="text/css"/>
+    <!-- Meta Code For Responsive Website -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+ 
+    <!-- Fontawesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>University Web Design</title>
+</head>
+<body>
+
+    <!--Sub-Header Section -->
+
+    <section class="sub-header">
+
+        <nav>
+            <a href="university.html"><img width="200px" src="86d33fd995f3d658fe0c6770be447c6c-removebg-preview.png" alt=""/></a>
+           <div class="nav-links" id="nav-links">
+            <i class="fa-solid fa-xmark" onclick ="hideMenu()"></i>
+            <ul>
+                <li><a href="university.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+           </div>
+           <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>World Largest University</h1>
+                <p>The mission of the University of Cambridge is to contribute to society through education, 
+                    learning and research at the highest international level.The mission of the University of Cambridge is to contribute to society through education, 
+                    learning and research at the highest international level.</p>
+                    <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="https://shorturl.at/mLS17" alt="">
+            </div>
+        </div>
+    </section>
+    
+   <!-- Footer Section -->
+   <section class="footer">
+    <h4>About Us</h4>
+    <p>We Are Online Learning Platform Where You Can Join From Anywhere,
+       We Are Online Learning Platform Where You Can Join From Anywhere
+    </p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Course By Our University</p>
+</section>
+
+
+<!-- Javascript Section -->
+<script type="text/javascript">
+
+var navLinks = document.getElementById('nav-links');
+
+function showMenu(){
+    navLinks.style.width = '200px';
+};
+
+function hideMenu(){
+    navLinks.style.width = 0;
+};
+
+
+
+
+</script>
+
+</body>
+</html>
